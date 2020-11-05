@@ -1,0 +1,298 @@
+@import './responsive';
+@import './module';
+/*
+header__title
+*/
+.header__title{
+
+    background-color: #f53c3c;
+    p{
+        text-align: right;
+        color: white;
+        padding: 5px 0;
+        @include responsive_extra_small{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    strong{
+        background-color: #eff30e;
+        padding: 0 10px;
+        color: black;
+    }
+}
+
+
+
+/*
+
+header__ banner
+
+*/
+
+.header__banner{
+
+  @extend %d-flex;
+  @extend %ju-content-sb;
+    align-items: center;
+    margin-top:2px ;
+    padding: 5px 0;
+    background-color: rgb(55, 56, 66);
+    .header__banner--logo{
+        i{
+            font-size: 50px;
+            color: #e75581;
+            margin-left: 20px;
+            position: relative;
+            &::after{
+                content: "hoangbeo";
+                font-size: 10px;
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                top: 25%;
+                left: 0;
+            }
+        }
+    }
+
+    .header__banner--menu{
+       
+        nav{
+            ul{
+                @extend %d-flex;
+                list-style: none;
+                li{
+                    margin: 0 10px;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    transition: 2s;
+                    &:hover{
+                        color: #eff30e;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+/*
+
+introduce
+
+*/
+
+.introduce{
+    background-image: url('../images/images1.jpeg');
+    background-size: contain;
+    text-align: center;
+    .wapper_content{
+        width: 80%;
+        margin: auto;
+        padding: 10% 0;
+        color: white;
+        @include responsive_xl{
+            width: 70%;
+        }
+        @include responsive_max{
+            width: 40%;
+            padding: 5% 0;
+        }
+
+        .introduce__title--text {
+            margin-bottom: 20px;
+        }
+
+        .introduce__body--text{
+            p{
+                position: relative;
+                @extend  %af-be-mar;
+                padding: 20px 0;
+                &::after{
+                   @extend %af-be;
+                    bottom: -10%;
+                    @extend  %af-be-mar;
+                }
+                &::before{
+                    top: -10%;
+                    @extend %af-be;
+                    @extend  %af-be-mar;
+                }
+            }
+        }
+
+        .introduce__btn{
+            margin-top: 10%;
+            button{
+                background: black;
+                color: white;
+                padding: 5% 0;
+                width: 40%;
+                font-size: 20px;
+                border: none;
+                @include responsive_xl{
+                    padding: 3% 0;
+                }
+                @include responsive_max{
+                    padding: 3% 0;
+                    width: 30%;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+
+services 
+
+*/
+.services{
+    background-image: url('../images/pngtree-beautiful-european-decorative-pattern-png-image_4521063.jpg');
+    text-align: center;
+
+    .services__body {
+
+        width: 90%;
+        margin: 20px auto;
+        display: flex;
+        @include responsive_lg{
+            flex-wrap: wrap;
+        }
+        @include responsive_md{
+            flex-wrap: wrap;
+        }
+        @include responsive_extra_small{
+            flex-wrap: wrap;
+        }
+        @include responsive_defaul{
+            flex-wrap: wrap;
+        }
+        &--item{
+            margin: 0 15px;
+            padding: 0 10px;
+            @include responsive_lg{
+                margin-top:15px ;
+            }
+        }
+        .item--icon{
+            font-size: 100px;
+        }
+        .fa-html5{
+            color:  rgb(234, 67, 53) ;
+        }
+        .fa-css3-alt{
+            color: rgb(66, 133, 244);
+        }
+        .fa-js{
+            color: rgb(251, 188, 5);
+        }
+    }
+}
+
+/*
+    portfolio
+*/
+
+.wapper-container{
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .portfolio{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        
+        .portfolio__text{
+            p{
+                position: relative;
+                @extend  %af-be-mar;
+                padding: 20px 0;
+                &::after{
+                   @extend %af-be;
+                    bottom: -5%;
+                    @extend  %af-be-mar;
+                }
+                &::before{
+                    top: -5%;
+                    @extend %af-be;
+                    @extend  %af-be-mar;
+                }
+            }
+        }
+        .portfolio__group{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            justify-content: space-between;
+            grid-row-gap: 50px;
+            padding:50px 0;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*
+ contact
+
+ */
+ .contact{
+    background-image: url('../images/bg1.jpg');
+    text-align: center;
+    .contact__title{
+        color: white;
+    }
+
+    .contact__follow{
+        padding: 15px 0;
+        .contact__follow--group{
+            display: flex;
+            justify-content: center;
+
+            .fa-facebook-square{
+                color: rgb(66, 133, 244);
+            }
+            .fa-youtube{
+                color: rgb(255, 0, 0);
+            }
+            .fa-twitter{
+                color: rgb(29, 161, 242);
+            }
+            .group-item > i{
+                font-size: 30px;
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 50%;
+                margin: 0 20px;
+            }
+        }
+    }
+ }
+
+
+ /*
+ footer
+
+ */
+
+ .footer{
+    .footer__author {
+        height: 66px;
+        background: black;
+        color: white;
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ }
