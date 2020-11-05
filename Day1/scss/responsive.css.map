@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAIA;;EAEE;AAQF;;EAEE;AASF;;EAEE;AASF;;EAEE;AAQF;;EAEE;AAOF;;;EAGE",
+    "sources": [
+        "responsive.scss",
+        "variable.scss"
+    ],
+    "names": [],
+    "file": "responsive.css"
+}

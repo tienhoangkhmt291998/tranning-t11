@@ -1,0 +1,26 @@
+
+%d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// %fe-wr{
+//     flex-wrap: wrap;
+// }
+
+%ju-content-sb{
+    justify-content: space-between;
+}
+
+%af-be{
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    left: 0;
+}
+
+%af-be-mar{
+    margin: 5px 0;
+}
