@@ -1,0 +1,33 @@
+footer{
+    height: 513px;
+    h1{
+        margin-bottom: 50px;
+       
+        color: rgb(252, 174, 97);
+        b{
+            color: rgb(255, 255, 255);
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    a{
+        color: white;
+    }
+    .nav{
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+    .author{
+        p{
+            color: rgb(53, 62, 84);
+        }
+    }
+
+    .font-size{
+        font-size: 25px;
+    }
+    
+
+}
+

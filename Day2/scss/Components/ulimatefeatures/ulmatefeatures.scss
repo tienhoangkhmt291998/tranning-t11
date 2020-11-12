@@ -1,0 +1,34 @@
+.d-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 120px;
+    height: 50%;
+}
+.br-none{
+    border: none;
+    padding: 15% 5% ;
+}
+.UlimateFeatures{
+    position: relative;
+    .ulimatefeatures--headding{
+        position: absolute;
+        top: 0;
+        h1{
+            font-size: 1.5rem;
+            width: 41%;
+            color: #242f51;
+        }
+    }
+    .ulimatefeatures--title{
+        padding-left: 2%;
+        width: 75%;
+    }
+ 
+    .card-body{
+        padding-left: 0;
+        padding-right:0 ;
+    }
+    .UlimateFeatures--images{
+        img{width: 100%;height: 100%;}
+    }
+}

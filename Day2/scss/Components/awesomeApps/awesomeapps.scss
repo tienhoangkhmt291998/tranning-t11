@@ -1,0 +1,21 @@
+
+.awesomeApps__body{
+    width: 60%;
+    .awesomeApps_list{
+        margin-top: 95px;
+        .list--title{
+            margin-left: 32px;
+            .title--items{
+                margin-bottom: 80px;
+            }
+        }
+        .list--icon{
+            display: flex;
+            flex-direction: column;
+            img{
+                margin-bottom: 110px;
+            }
+        }
+    }
+}
+

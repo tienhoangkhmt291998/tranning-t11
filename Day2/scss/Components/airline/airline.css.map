@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAA;EACJ,UAAU,EAAE,KAAK;EACjB,aAAa,EAAE,KAAK;CAIvB;;AAND,AAGI,QAHI,CAGJ,EAAE,CAAA;EACE,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "airline.scss"
+    ],
+    "names": [],
+    "file": "airline.css"
+}

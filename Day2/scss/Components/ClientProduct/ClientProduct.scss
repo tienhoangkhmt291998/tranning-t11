@@ -1,0 +1,124 @@
+#Client{
+    overflow: hidden;
+    padding-top: 156px;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.ClientProduct--title{
+    margin-left: auto;
+    h1{
+        width: 75%;
+    }
+}
+
+.ClientProduct{
+    .ClientProduct__images--bg{
+        img{
+            width: 100%;
+        }
+    }
+    .ClientProduct__images{
+        position: relative;
+        padding: 0;
+    }
+    
+    .ClientProduct__images--icon{
+        position: absolute;
+        top: 0;
+        img{
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+    .images-1{
+        top: 8%;
+        left: 75%;
+    }
+    .images-2{
+        top: 18%;
+        left: 5%;
+    }
+    .images-3{
+        height: 70px;
+        width: 70px;
+        top: 44%;
+        left: 38%;
+    
+    }
+    .images-4{
+        height: 80px;
+        width: 80px;
+        top: 50%;
+        left: 10%;
+
+    }
+    .images-5{
+        height: 50px;
+        top: 52%;
+        left: 60%;
+        width: 50px;;
+    }
+    .images-6{
+        height: 120px;
+        width: 120px;
+        top: 70%;
+        left: 30%;
+    }
+    .images-7{
+        left: 30%;
+    }
+    .ClientProduct__headding{
+        
+        .ClientProduct__body{
+           .ClientProduct--text{
+                margin-top: 30px;
+                margin-bottom: 0 !important;
+                width: 60%;
+           }
+            i{
+                color: #ffcc00;
+                margin: 1.5rem 0;
+            }
+            .body--content {
+               
+                .user--introduce{
+                    margin-left: 15px;
+                    .usename{
+                        padding-top: 20px;
+                    }
+                }
+                .silder--user{
+                    width: 85%;
+                    margin-top: 1.5rem;
+                    .col-lg-2{
+                        i{
+                            font-size: 35px;
+                            color: #2500f9;
+                            margin: 10px;
+                        }
+                    }
+                    .user--items{
+                        img{
+                            height: 70px;
+                            width: 70px;
+                        }
+                        .user--introduce{
+                            h4,p{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            
+            }
+        }
+    }
+    
+    // .ClientProduct__headding--title{
+    //     width: 60%;
+    // }
+    
+}
+

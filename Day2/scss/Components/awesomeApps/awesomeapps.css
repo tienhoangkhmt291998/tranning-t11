@@ -1,0 +1,30 @@
+.awesomeApps__body {
+  width: 60%;
+}
+
+.awesomeApps__body .awesomeApps_list {
+  margin-top: 95px;
+}
+
+.awesomeApps__body .awesomeApps_list .list--title {
+  margin-left: 32px;
+}
+
+.awesomeApps__body .awesomeApps_list .list--title .title--items {
+  margin-bottom: 80px;
+}
+
+.awesomeApps__body .awesomeApps_list .list--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.awesomeApps__body .awesomeApps_list .list--icon img {
+  margin-bottom: 110px;
+}
+/*# sourceMappingURL=awesomeapps.css.map */

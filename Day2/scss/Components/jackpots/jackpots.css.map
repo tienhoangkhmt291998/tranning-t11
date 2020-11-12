@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,oBAAoB;EAC5B,WAAW,EAAE,MAAM;CAKtB;;AARD,AAII,cAJU,CAIV,qBAAqB,CAAA;EACjB,SAAS,EAAE,IAAI;EACf,YAAY,EAAE,kBAAkB;CACnC",
+    "sources": [
+        "jackpots.scss"
+    ],
+    "names": [],
+    "file": "jackpots.css"
+}

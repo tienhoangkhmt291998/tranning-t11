@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,aAAa,EAAE,KAAK;CAcvB;;AAfD,AAEI,cAFU,CAEV,uBAAuB,CAAA;EACnB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;CAUf;;AAdL,AAKQ,cALM,CAEV,uBAAuB,CAGnB,EAAE,CAAA;EACE,UAAU,EAAE,IAAI;CACnB;;AAPT,AAQQ,cARM,CAEV,uBAAuB,CAMnB,CAAC,CAAA;EACG,UAAU,EAAE,IAAI;CACnB;;AAVT,AAWQ,cAXM,CAEV,uBAAuB,CASnB,MAAM,CAAA;EACF,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "communication.scss"
+    ],
+    "names": [],
+    "file": "communication.css"
+}

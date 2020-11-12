@@ -1,0 +1,21 @@
+.communication {
+  margin-bottom: 200px;
+}
+
+.communication .communication--desined {
+  width: 30%;
+  margin: auto;
+}
+
+.communication .communication--desined h1 {
+  margin-top: 50px;
+}
+
+.communication .communication--desined p {
+  margin-top: 40px;
+}
+
+.communication .communication--desined button {
+  margin-top: 45px;
+}
+/*# sourceMappingURL=communication.css.map */

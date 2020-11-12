@@ -1,0 +1,133 @@
+.btn-blue {
+  width: 170px;
+  height: 57px;
+  margin-right: 35px;
+  border-radius: 40px;
+  font-size: 18px;
+  background-color: #2500f9;
+  color: white;
+  border: 0;
+}
+
+.card-link {
+  color: #715afa;
+}
+
+.card-link :hover {
+  color: white !important;
+}
+
+.btn-blue:focus {
+  outline: none;
+}
+
+.btn-blue:hover {
+  background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+}
+
+/*
+    rectangle
+*/
+.rectangle {
+  margin-top: 40px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../../../images/Layer.png);
+  background-size: contain;
+}
+
+.rectangle img {
+  height: 100%;
+  border-radius: 50px;
+}
+
+.rectangle .rectangle-col {
+  position: relative;
+}
+
+.rectangle .rectangle-col .card {
+  position: relative;
+  padding: 0;
+}
+
+.rectangle .rectangle-col .card .card-body {
+  width: 71%;
+  margin-left: auto;
+}
+
+.rectangle .rectangle-col .card .card-body h3 {
+  width: 70%;
+  background: #e2eaed;
+  font-size: 19px;
+  border-radius: 35px;
+}
+
+.rectangle .rectangle-col .card .card-body h3 .fa-question {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: #feaa25;
+}
+
+.rectangle .rectangle-col .card .card-body h3 .fa-question::before {
+  font-size: 15px;
+  border: 1px solid white;
+  color: white;
+  padding: 2px 3px;
+  margin-left: 7px;
+  line-height: 45px;
+}
+
+.rectangle .rectangle-col .card .card-body .card-title {
+  font-size: 66px;
+}
+
+.rectangle .rectangle-col .card .card-body .card-text {
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.rectangle .rectangle-col .card::after {
+  content: "";
+  height: 25px;
+  width: 25px;
+  border: 4px solid #d4cdfd;
+  position: absolute;
+  top: -10%;
+  left: 459px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.rectangle .rectangle-col .card::before {
+  content: "\f00d";
+  position: absolute;
+  bottom: 0;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.rectangle .rectangle-col .rectangle-img {
+  padding: 0;
+}
+
+.rectangle .rectangle-col .rectangle-img img {
+  height: 245px;
+  width: 100%;
+}
+
+.rectangle-col::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 16%;
+  width: 25px;
+  height: 25px;
+  border: 6px solid #d4cdfd;
+  border-radius: 50%;
+  z-index: 2365632;
+}
+/*# sourceMappingURL=reactangle.css.map */
