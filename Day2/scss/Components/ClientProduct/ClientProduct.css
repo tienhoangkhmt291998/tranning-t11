@@ -1,0 +1,118 @@
+#Client {
+  overflow: hidden;
+  padding-top: 156px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ClientProduct--title {
+  margin-left: auto;
+}
+
+.ClientProduct--title h1 {
+  width: 75%;
+}
+
+.ClientProduct .ClientProduct__images--bg img {
+  width: 100%;
+}
+
+.ClientProduct .ClientProduct__images {
+  position: relative;
+  padding: 0;
+}
+
+.ClientProduct .ClientProduct__images--icon {
+  position: absolute;
+  top: 0;
+}
+
+.ClientProduct .ClientProduct__images--icon img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.ClientProduct .images-1 {
+  top: 8%;
+  left: 75%;
+}
+
+.ClientProduct .images-2 {
+  top: 18%;
+  left: 5%;
+}
+
+.ClientProduct .images-3 {
+  height: 70px;
+  width: 70px;
+  top: 44%;
+  left: 38%;
+}
+
+.ClientProduct .images-4 {
+  height: 80px;
+  width: 80px;
+  top: 50%;
+  left: 10%;
+}
+
+.ClientProduct .images-5 {
+  height: 50px;
+  top: 52%;
+  left: 60%;
+  width: 50px;
+}
+
+.ClientProduct .images-6 {
+  height: 120px;
+  width: 120px;
+  top: 70%;
+  left: 30%;
+}
+
+.ClientProduct .images-7 {
+  left: 30%;
+}
+
+.ClientProduct .ClientProduct__headding .ClientProduct__body .ClientProduct--text {
+  margin-top: 30px;
+  margin-bottom: 0 !important;
+  width: 60%;
+}
+
+.ClientProduct .ClientProduct__headding .ClientProduct__body i {
+  color: #ffcc00;
+  margin: 1.5rem 0;
+}
+
+.ClientProduct .ClientProduct__headding .ClientProduct__body .body--content .user--introduce {
+  margin-left: 15px;
+}
+
+.ClientProduct .ClientProduct__headding .ClientProduct__body .body--content .user--introduce .usename {
+  padding-top: 20px;
+}
+
+.ClientProduct .ClientProduct__headding .ClientProduct__body .body--content .silder--user {
+  width: 85%;
+  margin-top: 1.5rem;
+}
+
+.ClientProduct .ClientProduct__headding .ClientProduct__body .body--content .silder--user .col-lg-2 i {
+  font-size: 35px;
+  color: #2500f9;
+  margin: 10px;
+}
+
+.ClientProduct .ClientProduct__headding .ClientProduct__body .body--content .silder--user .user--items img {
+  height: 70px;
+  width: 70px;
+}
+
+.ClientProduct .ClientProduct__headding .ClientProduct__body .body--content .silder--user .user--items .user--introduce h4, .ClientProduct .ClientProduct__headding .ClientProduct__body .body--content .silder--user .user--items .user--introduce p {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=ClientProduct.css.map */

@@ -1,0 +1,36 @@
+footer {
+  height: 513px;
+}
+
+footer h1 {
+  margin-bottom: 50px;
+  color: #fcae61;
+}
+
+footer h1 b {
+  color: white;
+}
+
+footer h1:hover {
+  cursor: pointer;
+}
+
+footer a {
+  color: white;
+}
+
+footer .nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 45px;
+}
+
+footer .author p {
+  color: #353e54;
+}
+
+footer .font-size {
+  font-size: 25px;
+}
+/*# sourceMappingURL=footter.css.map */
