@@ -1,6 +1,24 @@
+@import '../../responsive';
+
 #Client{
     overflow: hidden;
     padding-top: 156px;
+    @include responsive_defaul{
+        padding-top: 50px;
+    }
+    @include responsive_sm_sub
+    {
+        padding-top: 50px;
+    }
+    @include responsive_md{
+        padding: 0;
+    }
+    @include responsive_lg{
+        padding: 0;
+    }
+    @include responsive_xl{
+        font-size: 15px;
+    }
 }
 .row{
     margin-left: 0;
@@ -10,6 +28,19 @@
     margin-left: auto;
     h1{
         width: 75%;
+        @include responsive_sm{
+            width: 100%;
+            margin: 15px  0;
+        }
+        @include responsive_defaul{
+            font-size: 1.5rem;
+        }
+        @include responsive_sm_sub{
+            font-size: 2rem;
+        }
+        @include responsive_lg{
+            width: 100%;
+        }
     }
 }
 
@@ -23,10 +54,18 @@
         position: relative;
         padding: 0;
     }
-    
+
     .ClientProduct__images--icon{
         position: absolute;
         top: 0;
+        @include responsive_defaul{
+            height: 30px !important;
+            width: 30px !important;
+        }
+        @include responsive_sm_sub{
+            height: 30px !important;
+            width: 30px !important;
+        }
         img{
             width: 100%;
             border-radius: 50%;
@@ -45,7 +84,7 @@
         width: 70px;
         top: 44%;
         left: 38%;
-    
+
     }
     .images-4{
         height: 80px;
@@ -70,19 +109,37 @@
         left: 30%;
     }
     .ClientProduct__headding{
-        
+
         .ClientProduct__body{
            .ClientProduct--text{
                 margin-top: 30px;
                 margin-bottom: 0 !important;
                 width: 60%;
+                @include responsive_defaul{
+                    width: 100%;
+                }
+                @include responsive_sm_sub{
+                    width: auto;
+                }
            }
             i{
                 color: #ffcc00;
                 margin: 1.5rem 0;
             }
             .body--content {
-               
+               h4{
+                   @include responsive_defaul{
+                       font-size: 1rem;
+                   }
+               }
+               p{
+                   @include responsive_defaul{
+                       width: 100% !important;
+                   }
+                   @include responsive_sm_sub{
+                       width: 100% !important;
+                   }
+               }
                 .user--introduce{
                     margin-left: 15px;
                     .usename{
@@ -92,11 +149,19 @@
                 .silder--user{
                     width: 85%;
                     margin-top: 1.5rem;
+                    .col-lg-10{
+                        @include responsive_defaul{
+                            padding: 0;
+                        }
+                    }
                     .col-lg-2{
                         i{
                             font-size: 35px;
                             color: #2500f9;
                             margin: 10px;
+                        }
+                        @include responsive_defaul{
+                            padding: 0;
                         }
                     }
                     .user--items{
@@ -111,14 +176,13 @@
                         }
                     }
                 }
-            
+
             }
         }
     }
-    
+
     // .ClientProduct__headding--title{
     //     width: 60%;
     // }
-    
-}
 
+}

@@ -1,12 +1,63 @@
+@import '../../responsive';
 
 .Frequently{
     width: 60%;
     margin: 195px auto auto auto;
+    @include responsive_sm{
+        width: 100%;
+    }
+    @include responsive_defaul{
+        margin: 70px auto auto auto;
+    }
+    @include responsive_md{
+        width: auto;
+    }
+    @include responsive_lg{
+        width: 90%;
+        margin: 50px auto auto auto;
+    }
+    @include responsive_xl{
+        font-size: 15px;
+        width: 90%;
+    }
+
     .Frequently--title{
         text-align: center;
+        @include responsive_defaul{
+            text-align: left;
+            padding: 0 10px;
+        }
+        @include responsive_sm{
+            padding: 0 10px;
+            text-align: left;
+        }
+        @include responsive_lg{
+            text-align: left;
+        }
+        h1{
+            @include responsive_defaul{
+                font-size: 1.5rem;
+            }
+            @include responsive_sm_sub{
+                font-size: 1.5rem;
+            }
+        }
         p{
             width: 60%;
             margin: auto;
+            @include responsive_defaul{
+                width: 100%;
+            }
+            @include responsive_sm_sub{
+                width: 100%;
+            }
+            @include responsive_md{
+                width: 100%;
+                font-size: 16px;
+            }
+            @include responsive_lg{
+                width: 100%;
+            }
         }
     }
     .question--title{
@@ -16,12 +67,26 @@
             padding-top: 45px;
             margin-bottom: 40px;
             font-size: 22px;
+            @include responsive_defaul{
+                padding-left: 0;
+                font-size: 17px;
+                text-align: center;
+            }
+
         }
         p{
             padding-left: 48px;
             padding-bottom: 36px;
             padding-right: 102px;
             font-size: 18px;
+            @include responsive_defaul
+            {
+                padding: 0 0 0 10px;
+                font-size: 15px;
+            }
+            @include responsive_sm_sub{
+                padding: 0 0 0 48px;
+            }
         }
     }
     .question--list{
@@ -30,6 +95,23 @@
             background-color: #f5f7fa;
             padding: 0 48px;
             margin: 10px 0;
+            @include responsive_defaul{
+                padding: 0 10px;
+            }
+            h3{
+                @include responsive_defaul{
+                    font-size: 1rem;
+                }
+                @include responsive_sm{
+                    font-size: 12px;
+                }
+                @include responsive_md{
+                    font-size: 1rem;
+                }
+                @include responsive_lg{
+                    font-size: 1rem;
+                }
+            }
             span{
                 font-size: 40px;
                 font-weight: 400;
@@ -38,4 +120,3 @@
         }
     }
 }
-

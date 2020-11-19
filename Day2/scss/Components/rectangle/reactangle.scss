@@ -1,7 +1,11 @@
 @import '../../module';
-
+@import '../../responsive';
 .card-link{
     color: rgb(113, 90, 250);
+    @include responsive_defaul{
+        display: inline-block;
+        margin-bottom: 35px;
+    }
     :hover{
         color: white !important;
     }
@@ -9,11 +13,18 @@
 
 .btn-blue{
     @extend %btn;
+    @include responsive_sm{
+        font-size: 22px;
+    }
+    @include responsive_defaul{
+        margin: 10px 0;
+        width: 100%;
+    }
     &:focus{
         outline: none;
-        
+
     }
-    &:hover{        
+    &:hover{
         background-image:linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%)  ;
     }
 }
@@ -31,21 +42,70 @@
     img{
         height: 100%;
         border-radius: 50px;
+        box-shadow: 10px 5px 5px 5px darkgrey;
+        @include responsive_sm{
+            width: 100%;
+        }
+    }
+    .col-lg-5{
+        width: 100%;
+        @include responsive_md{
+            text-align: center;
+        }
+        @include responsive_lg{
+            text-align: center;
+        }
     }
     .rectangle-col{
         position: relative;
+
+
         .card{
             position: relative;
             padding: 0;
-            
+
             .card-body{
                 width: 71%;
                 margin-left: auto;
+
+                @include responsive_sm{
+                    width: 100%;
+                    padding: 0;
+                }
+
+                @include responsive_md{
+                    width: 80%;
+                    margin: auto;
+                }
+
+               @include responsive_lg{
+                   width: 100%;
+                   margin-left: 0;
+               }
+               @include responsive_xl{
+                   width: 100%;
+               }
+
+                button{
+                    @include responsive_sm{
+                        margin:25px 0;
+                    }
+                }
                 h3{
                     width: 70%;
                     background: rgb(226, 234, 237);
                     font-size: 19px;
                     border-radius: 35px;
+                    color: #242f51;
+                    @include responsive_sm{
+                        width: auto;
+                    }
+                    @include responsive_defaul{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        font-size: 12px;
+                    }
                     .fa-question {
                         width: 45px;
                         height: 45px;
@@ -53,24 +113,48 @@
                         margin-right: 10px;
                         border-radius: 50%;
                         background: rgb(254, 170, 37);
-                
+                        @include responsive_defaul{
+                            width: 35px;
+                            height: 35px;
+                        }
+
                     }
                     .fa-question::before{
                             font-size: 15px;
-                            border: 1px solid white; 
-                            color: white;    
-                            padding: 2px 3px;  
+                            border: 1px solid white;
+                            color: white;
+                            padding: 2px 3px;
                             margin-left: 7px;
-                            line-height: 45px;      
+                            line-height: 45px;
+                            @include responsive_defaul{
+                                font-size: 10px;
+                                line-height: 35px;
+                            }
                     }
                 }
                 .card-title{
                     font-size: 66px;
+                    @include responsive_sm{
+                        font-size: 54px;
+                    }
+                    @include responsive_defaul{
+                        font-size: 30px;
+                    }
                 }
                 .card-text{
                     font-size: 20px;
                     padding-top: 15px;
                     padding-bottom: 20px;
+                    @include responsive_sm{
+                        font-size: 18px;
+                        line-height: 2;
+                    }
+                }
+                a{
+                    @include responsive_sm{
+                        font-size: 18px;
+                    }
+                    // @include responsive_defaul
                 }
             }
         }
@@ -83,6 +167,15 @@
             top: -10%;
             left: 459px;
             transform: rotate(45deg);
+            @include responsive_sm{
+                display: none;
+            }
+            @include responsive_md{
+                display: none;
+            }
+            @include responsive_lg{
+                display: none;
+            }
         }
         .card::before{
             content: "\f00d";
@@ -90,14 +183,17 @@
             bottom: 0;
             opacity: 0.6;
             font-size: 15px;
-            
+            @include responsive_defaul{
+                display: none;
+            }
         }
         .rectangle-img{
             padding: 0;
-        
+
             img{
                 height: 245px;
                 width: 100%;
+
             }
         }
     }
@@ -112,7 +208,16 @@
         border: 6px solid rgb(212, 205, 253);
         border-radius: 50%;
         z-index: 2365632;
+        @include responsive_defaul{
+            display: none;
+        }
+        @include responsive_sm{
+            display: none;
+        }
+        @include responsive_md{
+            display: none;
+        }
+        @include responsive_lg{
+            display: none;
+        }
 }
-
-
-

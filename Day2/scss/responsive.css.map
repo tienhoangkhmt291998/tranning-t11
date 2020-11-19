@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAUA;;EAEE;AAgBF;;EAEE;AAgBF;;EAEE;AAeF;;EAEE;AAOF;;;EAGE",
     "sources": [
-        "responsive.scss"
+        "responsive.scss",
+        "variable.scss"
     ],
     "names": [],
     "file": "responsive.css"

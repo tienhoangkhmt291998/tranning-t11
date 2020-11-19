@@ -1,10 +1,35 @@
+@import '../../responsive';
 .smartJackpots{
     width: 80%;
     margin: 143px auto auto auto;
     align-items: center;
+
+    @include responsive_sm{
+        width: 100%;
+        margin-top: 50px;
+    }
+    @include responsive_lg{
+        margin: 0 auto auto auto;
+    }
     .smartJackpots--title{
         font-size: 3rem;
         border-right: 1px solid darkgray;
+        @include responsive_sm{
+            font-size: 1.25rem;
+        }
+        @include responsive_md{
+            font-size: 1.5rem;
+        }
+        @include responsive_lg{
+            font-size: 2rem;
+        }
+    }
+    .smartJackpots--text{
+        @include responsive_md{
+            font-size: 1rem;
+        }
+        @include responsive_lg{
+            font-size: 1rem;
+        }
     }
 }
-

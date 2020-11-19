@@ -1,3 +1,5 @@
+@import '../../responsive';
+
 .Color_red{
     color: #f55767;
 }
@@ -13,10 +15,38 @@
 .Color-Fill__row{
     width: 80%;
     margin: auto;
+    @include responsive_sm{
+        flex-wrap: wrap;
+
+    }
+    @include responsive_md{
+        width: 100% !important;
+        display: block !important;
+    }
+    .Color-Fill__body{
+        width: 100% !important;
+        p{
+            @include responsive_sm{
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
 .Color-Fill{
     margin-top: 110px;
     margin-bottom: 120px;
+    @include responsive_defaul{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    @include responsive_sm{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    @include responsive_lg{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     .Color_red{
         color: #f55767;
     }
@@ -32,5 +62,16 @@
     .Color-Fill__row{
         width: 80%;
         margin: auto;
+        @include responsive_xl{
+            font-size: 15px;
+        }
+    }
+    h5{
+        @include responsive_lg{
+            font-size: 1rem;
+        }
+    }
+    @include responsive_lg{
+        font-size: 1rem;
     }
 }

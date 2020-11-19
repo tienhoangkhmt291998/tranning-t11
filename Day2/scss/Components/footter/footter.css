@@ -1,10 +1,68 @@
+/*
+     screen 320 < x  < 576
+*/
+/*
+    screen 576 < x < 768
+*/
+/*
+    screen 768 < x < 992
+*/
+/*
+    screen 992 < 1200
+*/
+/*
+
+screen > 1200
+*/
 footer {
   height: 513px;
+}
+
+@media screen and (max-width: 320px) {
+  footer {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  footer {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  footer {
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  footer {
+    height: 250px;
+  }
 }
 
 footer h1 {
   margin-bottom: 50px;
   color: #fcae61;
+}
+
+@media screen and (max-width: 320px) {
+  footer h1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  footer h1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  footer h1 {
+    margin-bottom: 0;
+  }
 }
 
 footer h1 b {
@@ -24,6 +82,24 @@ footer .nav {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 45px;
+}
+
+@media screen and (max-width: 320px) {
+  footer .nav {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  footer .nav {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  footer .nav {
+    margin-bottom: 0;
+  }
 }
 
 footer .author p {

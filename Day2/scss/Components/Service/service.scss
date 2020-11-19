@@ -1,13 +1,62 @@
+@import '../../responsive';
+
 #Service{
     margin-bottom: 155px;
+    @include responsive_sm{
+        margin: 10px 0;
+    }
+    @include responsive_md{
+        margin: 75px 0;
+    }
+    @include responsive_lg{
+        margin: 50px 0;
+    }
+}
+.service{
+    max-width: inherit;
 }
 .feesService--headding{
     text-align: center;
     width: 40%;
     margin: auto;
     margin-bottom: 88px;
+    @include responsive_sm{
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        padding: 0 10px;
+    }
+    @include responsive_md{
+        width: auto;
+    }
+    @include responsive_lg{
+        width: 90%;
+        margin-bottom: 0;
+    }
+    @include responsive_xl
+    {
+        width: 80%;
+    }
     h1{
         margin-bottom: 37px;
+        @include responsive_defaul{
+            font-size: 1.5rem;
+        }
+        @include responsive_md{
+            font-size: 2rem;
+        }
+        @include responsive_sm_sub{
+            font-size: 1.5rem;
+        }
+        @include responsive_lg{
+            margin-bottom: 0;
+            font-size: 2rem;
+        }
+    }
+    p{
+        @include responsive_lg{
+            font-size: 1.25rem;
+        }
     }
 }
 
@@ -20,6 +69,29 @@
     border: 1px solid rgb(170, 165, 165);
     margin: auto;
     width: 23%;
+    @include responsive_sm{
+        width: 60%;
+        padding: 0;
+    }
+    @include responsive_defaul{
+        width: 90%;
+        margin: 20px auto;
+    }
+    @include responsive_sm_sub{
+        width: 77%;
+    }
+    @include responsive_md{
+        width: 50%;
+    }
+    @include responsive_md_sub{
+        width: 50%;
+    }
+    @include responsive_lg{
+        width: 40%;
+    }
+    @include responsive_xl{
+        width: 30%;
+    }
     button{
         width: 140px;
         margin: 0;
@@ -31,13 +103,29 @@
         color: white;
     }
 }
-
+.feesService__groups{
+    @include responsive_defaul{
+        display: block !important;
+    }
+    @include responsive_sm{
+        display: block !important;
+    }
+}
 .feesService__groups--items{
     width: 313px;
     height: 577px;
     border: 1px solid gainsboro;
     margin: 25px;
     cursor: pointer;
+    @include responsive_sm{
+        margin: 15px auto;
+    }
+    @include responsive_md{
+        height: 580px;
+    }
+    @include responsive_lg{
+        height: 660px;
+    }
     .item--btn{
         margin: 45px 0 25px 0;
         button{
@@ -47,9 +135,21 @@
     }
     .item--headding{
        padding: 70px 54px 80px 45px;
+       @include responsive_defaul{
+        padding: 50px 54px 50px 45px;
+       }
+
+    }
        h1{
            font-size: 4rem;
            color: #242f51;
+           @include responsive_sm{
+               font-size: 3rem;
+           }
+           @include responsive_md{
+            font-size: 3rem;
+           }
+
        }
        h5{
            color: #242f51;
@@ -66,10 +166,16 @@
         color: #694ffb;
         font-weight: 700;
     }
-}
+
 .feesService__groups--items:hover{
     height: 660px;
     transition: height 1s;
+    @include responsive_md{
+        height: 750px;
+    }
+    @include responsive_lg{
+        height: 750px;
+    }
     .start--trail{
         transition: 2s;
         display: block;
@@ -86,20 +192,92 @@
         text-align: center;
         width: 51%;
         margin: auto;
+        @include responsive_sm{
+            width: 90%;
+        }
+
+        @include responsive_md{
+            width: auto;
+        }
+        @include responsive_lg{
+            width: 100%;
+        }
         h1{
             font-size: 2rem;
             color: #242f51;
+            @include responsive_defaul{
+                font-size: 1.5rem;
+            }
+            @include responsive_sm_sub{
+                font-size: 1.5rem;
+            }
+        }
+        p{
+            @include responsive_defaul{
+                text-align: left;
+            }
+            @include responsive_md{
+                font-size: 1rem;
+            }
         }
     }
 }
+.service--list{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    @include responsive_defaul{
+        grid-template-columns: 100%;
+    }
+    @include responsive_sm{
+        grid-template-columns: 100%;
+    }
+}
  .service-item {
+     @include responsive_xl{
+         max-width: inherit ;
+     }
     .card{
         text-align: center;
         padding-left: 13%;
         padding-right: 13%;
+        @include responsive_defaul{
+            padding: 0;
+            text-align: left;
+        }
+        @include responsive_sm{
+            text-align: left;
+        }
+        @include responsive_lg{
+            padding: 5% 13% !important;
+        }
+        p{
+            @include responsive_defaul{
+                font-size: 15px;
+            }
+
+        }
         .card-body{
             padding-left: 0;
             padding-right: 0;
+            @include responsive_lg{
+                font-size: 1rem;
+            }
+            h5{
+                @include responsive_sm{
+                    font-size: 2rem !important;
+                }
+            }
+            p{
+                @include responsive_sm{
+                    font-size: 1.25rem !important;
+                }
+                @include responsive_md{
+                    font-size: 15px;
+                }
+            }
         }
-    } 
+        @include responsive_md{
+            padding: 0;
+        }
+    }
 }

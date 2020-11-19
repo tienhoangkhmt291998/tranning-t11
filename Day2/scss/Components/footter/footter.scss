@@ -1,8 +1,30 @@
+@import '../../responsive';
+
 footer{
     height: 513px;
+    @include responsive_defaul{
+        height: 350px;
+    }
+    @include responsive_sm{
+        height: 250px;
+    }
+    @include responsive_md{
+        height: 340px;
+    }
+    @include responsive_lg{
+        height: 250px;
+    }
     h1{
         margin-bottom: 50px;
-       
+        @include responsive_defaul{
+            margin-bottom: 20px;
+        }
+        @include responsive_md{
+            margin-bottom: 20px;
+        }
+        @include responsive_lg{
+            margin-bottom: 0;
+        }
         color: rgb(252, 174, 97);
         b{
             color: rgb(255, 255, 255);
@@ -17,6 +39,15 @@ footer{
     .nav{
         justify-content: center;
         margin-bottom: 45px;
+        @include responsive_defaul{
+            margin-bottom: 20px;
+        }
+        @include responsive_md{
+            margin-bottom: 20px;
+        }
+        @include responsive_lg{
+            margin-bottom: 0;
+        }
     }
     .author{
         p{
@@ -27,7 +58,6 @@ footer{
     .font-size{
         font-size: 25px;
     }
-    
+
 
 }
-

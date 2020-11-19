@@ -9,12 +9,48 @@
   border: 0;
 }
 
+/*
+     screen 320 < x  < 576
+*/
+/*
+    screen 576 < x < 768
+*/
+/*
+    screen 768 < x < 992
+*/
+/*
+    screen 992 < 1200
+*/
+/*
+
+screen > 1200
+*/
 .card-link {
   color: #715afa;
 }
 
+@media screen and (max-width: 320px) {
+  .card-link {
+    display: inline-block;
+    margin-bottom: 35px;
+  }
+}
+
 .card-link :hover {
   color: white !important;
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .btn-blue {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .btn-blue {
+    margin: 10px 0;
+    width: 100%;
+  }
 }
 
 .btn-blue:focus {
@@ -39,6 +75,30 @@
 .rectangle img {
   height: 100%;
   border-radius: 50px;
+  -webkit-box-shadow: 10px 5px 5px 5px darkgrey;
+          box-shadow: 10px 5px 5px 5px darkgrey;
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .rectangle img {
+    width: 100%;
+  }
+}
+
+.rectangle .col-lg-5 {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .rectangle .col-lg-5 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .rectangle .col-lg-5 {
+    text-align: center;
+  }
 }
 
 .rectangle .rectangle-col {
@@ -55,11 +115,64 @@
   margin-left: auto;
 }
 
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .rectangle .rectangle-col .card .card-body {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .rectangle .rectangle-col .card .card-body {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .rectangle .rectangle-col .card .card-body {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .rectangle .rectangle-col .card .card-body {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .rectangle .rectangle-col .card .card-body button {
+    margin: 25px 0;
+  }
+}
+
 .rectangle .rectangle-col .card .card-body h3 {
   width: 70%;
   background: #e2eaed;
   font-size: 19px;
   border-radius: 35px;
+  color: #242f51;
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .rectangle .rectangle-col .card .card-body h3 {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .rectangle .rectangle-col .card .card-body h3 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+  }
 }
 
 .rectangle .rectangle-col .card .card-body h3 .fa-question {
@@ -71,6 +184,13 @@
   background: #feaa25;
 }
 
+@media screen and (max-width: 320px) {
+  .rectangle .rectangle-col .card .card-body h3 .fa-question {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 .rectangle .rectangle-col .card .card-body h3 .fa-question::before {
   font-size: 15px;
   border: 1px solid white;
@@ -80,14 +200,46 @@
   line-height: 45px;
 }
 
+@media screen and (max-width: 320px) {
+  .rectangle .rectangle-col .card .card-body h3 .fa-question::before {
+    font-size: 10px;
+    line-height: 35px;
+  }
+}
+
 .rectangle .rectangle-col .card .card-body .card-title {
   font-size: 66px;
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .rectangle .rectangle-col .card .card-body .card-title {
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .rectangle .rectangle-col .card .card-body .card-title {
+    font-size: 30px;
+  }
 }
 
 .rectangle .rectangle-col .card .card-body .card-text {
   font-size: 20px;
   padding-top: 15px;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .rectangle .rectangle-col .card .card-body .card-text {
+    font-size: 18px;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .rectangle .rectangle-col .card .card-body a {
+    font-size: 18px;
+  }
 }
 
 .rectangle .rectangle-col .card::after {
@@ -102,12 +254,36 @@
           transform: rotate(45deg);
 }
 
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .rectangle .rectangle-col .card::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .rectangle .rectangle-col .card::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .rectangle .rectangle-col .card::after {
+    display: none;
+  }
+}
+
 .rectangle .rectangle-col .card::before {
   content: "\f00d";
   position: absolute;
   bottom: 0;
   opacity: 0.6;
   font-size: 15px;
+}
+
+@media screen and (max-width: 320px) {
+  .rectangle .rectangle-col .card::before {
+    display: none;
+  }
 }
 
 .rectangle .rectangle-col .rectangle-img {
@@ -129,5 +305,29 @@
   border: 6px solid #d4cdfd;
   border-radius: 50%;
   z-index: 2365632;
+}
+
+@media screen and (max-width: 320px) {
+  .rectangle-col::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .rectangle-col::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .rectangle-col::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .rectangle-col::before {
+    display: none;
+  }
 }
 /*# sourceMappingURL=reactangle.css.map */

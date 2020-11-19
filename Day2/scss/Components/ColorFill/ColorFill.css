@@ -1,3 +1,19 @@
+/*
+     screen 320 < x  < 576
+*/
+/*
+    screen 576 < x < 768
+*/
+/*
+    screen 768 < x < 992
+*/
+/*
+    screen 992 < 1200
+*/
+/*
+
+screen > 1200
+*/
 .Color_red {
   color: #f55767;
 }
@@ -19,9 +35,54 @@
   margin: auto;
 }
 
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .Color-Fill__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .Color-Fill__row {
+    width: 100% !important;
+    display: block !important;
+  }
+}
+
+.Color-Fill__row .Color-Fill__body {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .Color-Fill__row .Color-Fill__body p {
+    font-size: 1.5rem;
+  }
+}
+
 .Color-Fill {
   margin-top: 110px;
   margin-bottom: 120px;
+}
+
+@media screen and (max-width: 320px) {
+  .Color-Fill {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .Color-Fill {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .Color-Fill {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 .Color-Fill .Color_red {
@@ -43,5 +104,23 @@
 .Color-Fill .Color-Fill__row {
   width: 80%;
   margin: auto;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .Color-Fill .Color-Fill__row {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .Color-Fill h5 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .Color-Fill {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=ColorFill.css.map */
