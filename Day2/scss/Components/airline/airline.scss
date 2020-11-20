@@ -1,7 +1,30 @@
+@import '../../responsive';
+
 .airline{
     margin-top: 118px;
     margin-bottom: 180px;
+    @include responsive_sm{
+        margin-bottom: 0;
+    }
     h5{
         margin-bottom: 40px;
+        @include responsive_sm{
+            font-size: 2.25rem;
+        }
+    }
+    .nav{
+        @include responsive_sm{
+            display: grid !important;
+            grid-template-columns:100%;
+            text-align: center;
+        }
+        @include responsive_md{
+            display: grid !important;
+            grid-template-columns: 50% 50%;
+            text-align: center;
+        }
+        &-item{
+            margin: 10px 0;
+        }
     }
 }

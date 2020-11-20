@@ -1,5 +1,43 @@
+/*
+     screen 320 < x  < 576
+*/
+/*
+    screen 576 < x < 768
+*/
+/*
+    screen 768 < x < 992
+*/
+/*
+    screen 992 < 1200
+*/
+/*
+
+screen > 1200
+*/
 #Service {
   margin-bottom: 155px;
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  #Service {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  #Service {
+    margin: 75px 0;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #Service {
+    margin: 50px 0;
+  }
+}
+
+.service {
+  max-width: inherit;
 }
 
 .feesService--headding {
@@ -9,8 +47,67 @@
   margin-bottom: 88px;
 }
 
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .feesService--headding {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .feesService--headding {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .feesService--headding {
+    width: 90%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .feesService--headding {
+    width: 80%;
+  }
+}
+
 .feesService--headding h1 {
   margin-bottom: 37px;
+}
+
+@media screen and (max-width: 320px) {
+  .feesService--headding h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .feesService--headding h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 350px) {
+  .feesService--headding h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .feesService--headding h1 {
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .feesService--headding p {
+    font-size: 1.25rem;
+  }
 }
 
 .feesService--btn {
@@ -22,6 +119,50 @@
   border: 1px solid #aaa5a5;
   margin: auto;
   width: 23%;
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .feesService--btn {
+    width: 60%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .feesService--btn {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 350px) {
+  .feesService--btn {
+    width: 77%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .feesService--btn {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) and (min-width: 580px) {
+  .feesService--btn {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .feesService--btn {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .feesService--btn {
+    width: 30%;
+  }
 }
 
 .feesService--btn button {
@@ -36,12 +177,42 @@
   color: white;
 }
 
+@media screen and (max-width: 320px) {
+  .feesService__groups {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .feesService__groups {
+    display: block !important;
+  }
+}
+
 .feesService__groups--items {
   width: 313px;
   height: 577px;
   border: 1px solid gainsboro;
   margin: 25px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .feesService__groups--items {
+    margin: 15px auto;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .feesService__groups--items {
+    height: 580px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .feesService__groups--items {
+    height: 660px;
+  }
 }
 
 .feesService__groups--items .item--btn {
@@ -57,24 +228,42 @@
   padding: 70px 54px 80px 45px;
 }
 
-.feesService__groups--items .item--headding h1 {
+@media screen and (max-width: 320px) {
+  .feesService__groups--items .item--headding {
+    padding: 50px 54px 50px 45px;
+  }
+}
+
+.feesService__groups--items h1 {
   font-size: 4rem;
   color: #242f51;
 }
 
-.feesService__groups--items .item--headding h5 {
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .feesService__groups--items h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .feesService__groups--items h1 {
+    font-size: 3rem;
+  }
+}
+
+.feesService__groups--items h5 {
   color: #242f51;
 }
 
-.feesService__groups--items .item--headding i {
+.feesService__groups--items i {
   font-size: 15px;
 }
 
-.feesService__groups--items .body--text {
+.body--text {
   color: #999ca5;
 }
 
-.feesService__groups--items .start--trail {
+.start--trail {
   display: none;
   color: #694ffb;
   font-weight: 700;
@@ -84,6 +273,18 @@
   height: 660px;
   -webkit-transition: height 1s;
   transition: height 1s;
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .feesService__groups--items:hover {
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .feesService__groups--items:hover {
+    height: 750px;
+  }
 }
 
 .feesService__groups--items:hover .start--trail {
@@ -101,9 +302,78 @@
   margin: auto;
 }
 
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .service .service--introduce {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .service .service--introduce {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .service .service--introduce {
+    width: 100%;
+  }
+}
+
 .service .service--introduce h1 {
   font-size: 2rem;
   color: #242f51;
+}
+
+@media screen and (max-width: 320px) {
+  .service .service--introduce h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 350px) {
+  .service .service--introduce h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .service .service--introduce p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .service .service--introduce p {
+    font-size: 1rem;
+  }
+}
+
+.service--list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width: 320px) {
+  .service--list {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .service--list {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .service-item {
+    max-width: inherit;
+  }
 }
 
 .service-item .card {
@@ -112,8 +382,63 @@
   padding-right: 13%;
 }
 
+@media screen and (max-width: 320px) {
+  .service-item .card {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .service-item .card {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .service-item .card {
+    padding: 5% 13% !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .service-item .card p {
+    font-size: 15px;
+  }
+}
+
 .service-item .card .card-body {
   padding-left: 0;
   padding-right: 0;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .service-item .card .card-body {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .service-item .card .card-body h5 {
+    font-size: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .service-item .card .card-body p {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .service-item .card .card-body p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .service-item .card {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=service.css.map */

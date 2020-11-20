@@ -1,10 +1,56 @@
+@import '../../responsive';
+
 .communication{
     margin-bottom: 200px;
+    @include responsive_defaul{
+        margin-bottom: 50px;
+    }
+    @include responsive_sm{
+        display: block !important;
+        margin-bottom: 50px;
+    }
+    @include responsive_sm_sub{
+        margin-bottom:100px ;
+    }
+    @include responsive_md{
+        display: block !important;
+    }
+    @include responsive_lg{
+        margin-bottom: 50px;
+    }
+    &--iconImages{
+        img{
+            @include responsive_lg{
+                width: 100%;
+            }
+        }
+    }
     .communication--desined{
         width: 30%;
         margin: auto;
+        @include responsive_sm{
+            width: 80%;
+        }
+        @include responsive_md{
+            width: 100%;
+            padding: 0 10px;
+        }
+        @include responsive_lg{
+            width: 90%;
+        }
         h1{
             margin-top: 50px;
+            @include responsive_defaul
+            {
+                font-size: 1.5rem;
+            }
+            @include responsive_sm_sub{
+                font-size: 1.5rem;
+            }
+
+            @include responsive_lg{
+                font-size: 1.5rem;
+            }
         }
         p{
             margin-top: 40px;
@@ -12,5 +58,20 @@
         button{
             margin-top: 45px;
         }
+    }
+    &--iconImages{
+        @include responsive_md{
+            text-align: center;
+        }
+       img{
+
+        @include responsive_sm{
+            width: 100%;
+
+        }
+        @include responsive_md{
+            width: 100%;
+        }
+       }
     }
 }

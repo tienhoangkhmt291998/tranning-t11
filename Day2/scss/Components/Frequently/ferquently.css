@@ -1,15 +1,120 @@
+/*
+     screen 320 < x  < 576
+*/
+/*
+    screen 576 < x < 768
+*/
+/*
+    screen 768 < x < 992
+*/
+/*
+    screen 992 < 1200
+*/
+/*
+
+screen > 1200
+*/
 .Frequently {
   width: 60%;
   margin: 195px auto auto auto;
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .Frequently {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Frequently {
+    margin: 70px auto auto auto;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .Frequently {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .Frequently {
+    width: 90%;
+    margin: 50px auto auto auto;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .Frequently {
+    font-size: 15px;
+    width: 90%;
+  }
 }
 
 .Frequently .Frequently--title {
   text-align: center;
 }
 
+@media screen and (max-width: 320px) {
+  .Frequently .Frequently--title {
+    text-align: left;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .Frequently .Frequently--title {
+    padding: 0 10px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .Frequently .Frequently--title {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Frequently .Frequently--title h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 350px) {
+  .Frequently .Frequently--title h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .Frequently .Frequently--title p {
   width: 60%;
   margin: auto;
+}
+
+@media screen and (max-width: 320px) {
+  .Frequently .Frequently--title p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 350px) {
+  .Frequently .Frequently--title p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .Frequently .Frequently--title p {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .Frequently .Frequently--title p {
+    width: 100%;
+  }
 }
 
 .Frequently .question--title {
@@ -23,11 +128,32 @@
   font-size: 22px;
 }
 
+@media screen and (max-width: 320px) {
+  .Frequently .question--title h3 {
+    padding-left: 0;
+    font-size: 17px;
+    text-align: center;
+  }
+}
+
 .Frequently .question--title p {
   padding-left: 48px;
   padding-bottom: 36px;
   padding-right: 102px;
   font-size: 18px;
+}
+
+@media screen and (max-width: 320px) {
+  .Frequently .question--title p {
+    padding: 0 0 0 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 350px) {
+  .Frequently .question--title p {
+    padding: 0 0 0 48px;
+  }
 }
 
 .Frequently .question--list {
@@ -38,6 +164,36 @@
   background-color: #f5f7fa;
   padding: 0 48px;
   margin: 10px 0;
+}
+
+@media screen and (max-width: 320px) {
+  .Frequently .question--list .list-items {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Frequently .question--list .list-items h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .Frequently .question--list .list-items h3 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .Frequently .question--list .list-items h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .Frequently .question--list .list-items h3 {
+    font-size: 1rem;
+  }
 }
 
 .Frequently .question--list .list-items span {
